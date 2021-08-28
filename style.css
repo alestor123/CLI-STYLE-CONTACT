@@ -1,0 +1,94 @@
+body {
+  background-color: black;
+  font-family: monospace;
+}
+.window {
+  text-align: left;
+  width: 600px;
+  height: 360px;
+  border-radius: 10px;
+  margin: auto;
+  position: relative;
+  display: block;
+  top: 25vh;
+  transition: all 0.5s ease;
+}
+.window.minimized {
+  height: 30px;
+  top: calc(62vh);
+  width: 250px;
+}
+.window.fullscreen {
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.windowheader {
+  background: #e0e8f0;
+  height: 30px;
+  border-radius: 8px 8px 0 0;
+  padding-left: 10px;
+}
+
+.window #terminal {
+  color: white;
+  font-size: 11pt;
+  background: #30353a;
+  padding: 10px;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  top: 30px;
+  bottom: 0;
+  overflow: auto;
+}
+.window .contact {
+  list-style: none;
+  margin-left: -30px;
+}
+.window h4 {
+  text-align: center;
+}
+.window a {
+  text-align: center;
+  display: block;
+}
+.window .input {
+  outline-color: #30353a;
+  border: none;
+  display: inline-block;
+}
+.root {
+  color: #95F584;
+}
+
+.window .green {
+  color: green;
+}
+.command_input {
+  border: none;
+  background: #000634;
+  color: white;
+}
+
+
+.terminal-data {
+  display: none;
+}
+@media only screen and (max-width: 650px) {
+  .window {
+    width: 95%;
+    height: 60vh;
+    top: 10vh;
+ }
+  .footer {
+    bottom: 20px;
+ }
+}
+.ttl {
+  padding-top: 5px;
+  text-align: center;
+}
+
